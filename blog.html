@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMMENT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="favorites.html">FAVORITE</a></li>
+            <li><a href="blog.html">COMMENT</a></li>
+            <li><a href="info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Comment</h1>
+    </section>
+
+    <!-----------blog--------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/laptop1.jpg" alt="" />
+          <h2>Why did I choose Jollibee?</h2>
+          <p>
+            Filipino culture is mostly family-oriented, and they promoted Jollibee's ad that way - large families would gather at 
+			the dinner table, sharing a bucket of spicy and crispy fried chicken. 
+			This is why much of Jollibee's success is due to the way the brand perfectly embodies Filipino identity and culture.
+          </p>
+		  <br>
+          <p>
+            Jollibee's main feature is the way their food menu focuses on the palette of their audience. 
+			It was originally made to cater the Filipino taste, 
+			providing banana-ketchup spaghetti with hotdogs and fried garlic rice to have with breakfast meals.
+          </p>
+
+          <div class="comment-box">
+            <h3>What makes Jollibee special to you?</h3>
+
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-right">
+          <h3>My top picks to eat in Jollibee</h3>
+          <div>
+            <span>First Choice:</span>
+            <span>2 - pc. Chickenjoy</span>
+          </div>
+          <div>
+            <span>Second Choice:</span>
+            <span>Yumburger</span>
+          </div>
+          <div>
+            <span>Third Choice:</span>
+            <span>Chicken Sandwich</span>
+          </div>
+          <div>
+            <span>Fourth Choice:</span>
+            <span>Jolly Crispy Fries Bucket</span>
+          </div>
+          <div>
+            <span>Fifth Choice:</span>
+            <span>Peach Mango Pie</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>Web Design Principles</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <p>| MC Lawrence Abanto |</p>
+    </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
